@@ -1,2 +1,2 @@
-# test-setup
-Test setup for Vue.js project with connection to DB on AWS
+# Vuesome
+Test setup for Vue.js project with connection to persisted database on Firebase
