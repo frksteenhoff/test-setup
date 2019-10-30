@@ -1,5 +1,5 @@
 # vuesome
-A project for playing with different Vue.js components, bindings etc.
+A project for playing with different Vue.js components, bindings, routing, events etc.
 
 ## Requisites
 ```
