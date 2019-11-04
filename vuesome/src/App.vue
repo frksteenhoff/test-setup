@@ -28,4 +28,9 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
 }
 
+button {
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 </style>
