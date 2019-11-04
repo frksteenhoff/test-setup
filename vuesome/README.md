@@ -1,4 +1,12 @@
 # vuesome
+A project for playing with different Vue.js components, bindings, routing, events etc.
+
+## Requisites
+```
+Node.js
+Vue.js
+Firebase
+```
 
 ## Project setup
 ```
