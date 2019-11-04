@@ -8,9 +8,9 @@
          <button @click="toggle">ChangeState</button>
          <h2>List of important things</h2>
          <ol>
-               <li v-for="todo in this.$store.state.store.todos" v-bind:key="todo">
+               <b-list-group-item v-for="todo in this.$store.state.store.todos" v-bind:key="todo">
                      {{todo}}
-               </li>
+               </b-list-group-item>
          </ol>
          <p>Count</p>
          <p>{{this.$store.state.store.count}}</p>
@@ -19,7 +19,19 @@
          <p id="tst">Message: {{this.$store.state.store.message}}</p>
          <p>Reversed: {{reverseMessage()}}</p>
 
-         <ImageBox/>
+         <div class="container">
+               <div class="row">
+                     <div class="col-sm-4">
+                        <ImageBox/>
+                        </div>
+                    <div class="col-sm-4">
+                        <ImageBox/>
+                    </div>
+                    <div class="col-sm-4">
+                        <ImageBox/>
+                    </div>
+            </div>        
+      </div>
    </div>
 </template>
 
@@ -46,3 +58,10 @@
       }
    }
 </script>
+
+<style>
+      div.list-group-item {
+            color: black;
+            width: 50%;
+      }
+</style>
