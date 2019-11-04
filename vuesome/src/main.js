@@ -1,15 +1,15 @@
+import '@babel/polyfill'
+import 'mutationobserver-shim'
 import Vue from 'vue'
-import BootstrapVue from "bootstrap-vue"
+import './plugins/bootstrap-vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap-vue/dist/bootstrap-vue.css"
 
 import { routes } from './routes'
 import store from './store/store'
 import firebase from 'firebase'
 
-Vue.use(VueRouter, BootstrapVue);
+Vue.use(VueRouter);
 
 Vue.config.productionTip = false
 

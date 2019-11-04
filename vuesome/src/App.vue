@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <b-alert dismissible show> Hello {{ name }}! </b-alert>
     <Header/>
     <router-view></router-view>
   </div>
@@ -12,6 +13,11 @@
     name: 'app',
     components: {
       Header
+    },
+    data : function() {
+      return {
+        name: "Henriette"
+      }
     }
   }
 </script>
