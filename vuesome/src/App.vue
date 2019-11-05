@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <b-alert dismissible show> Hello {{ name }}! </b-alert>
+    <p v-if="this.isShown">Hi there!!</p>
     <Header/>
-    <router-view></router-view>
+    <router-view v-on:clickedSomething="handleClickInParent"></router-view>
   </div>
 </template>
 
@@ -16,7 +17,14 @@
     },
     data : function() {
       return {
-        name: "Henriette"
+        name: "Henriette",
+        isShown: false
+      }
+    },
+    methods: {
+      handleClickInParent: function() {
+        this.isShown = true
+        console.log("Got it!")
       }
     }
   }

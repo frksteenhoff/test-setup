@@ -1,7 +1,5 @@
 <template>
-   <imagebox>
          <img src="../assets/logo.png"/>
-   </imagebox>
 </template>
 
 <script>
